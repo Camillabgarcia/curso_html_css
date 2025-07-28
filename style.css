@@ -1,0 +1,39 @@
+/* Seu comentário: "Tirando margens pre-estabelecidas para ter controle total do layout" -> Perfeito! */
+
+/* O asterisco (*) é o "seletor universal". Ele seleciona TODOS os elementos da página HTML. */
+* {
+    /* Remove a margem externa de todos os elementos. */
+    margin: 0;
+    /* Remove o preenchimento (espaçamento interno) de todos os elementos. */
+    padding: 0;
+}
+
+/* Seleciona o elemento <body>, que é o corpo principal da sua página. */
+body {
+    /* 'vh' significa "viewport height" (altura da janela). 100vh faz o corpo ocupar 100% da altura da tela. */
+    height: 100vh;
+    
+    /* Esta é a regra que muda o cálculo do tamanho dos elementos, o border-box informa ao navegador para contabilizar qualquer borda e preenchimento nos valores especificados para a largura e a altura de um elemento.. 
+       Agora, a largura (width) e altura (height) que você definir incluirão o padding e a borda. */
+    box-sizing: border-box;
+
+    /* Define a cor de fundo de toda a página como preto. */
+    background-color: black;
+    /* Define a cor padrão do texto para todos os elementos da página como um cinza bem claro (quase branco). */
+    color: #F6F6F6;
+}
+
+
+/* O ponto (.) no início indica um seletor de CLASSE. 
+   Ele aplicará este estilo a QUALQUER elemento HTML que tiver o atributo class="titulo-destaque". */
+.titulo-destaque {
+    /* Define a cor do texto para esses elementos como um azul ciano brilhante. */
+    color: #22D4FD;
+}
+
+.apresentacao {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
